@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CounterComponent } from "./counter/counter/counter.component";
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './counter/state/counter.reducer';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CounterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

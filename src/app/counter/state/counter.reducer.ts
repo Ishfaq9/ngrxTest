@@ -27,7 +27,8 @@ const _counterReducer = createReducer(
     on(customIncrement, (state,action) => {
         return {
             ...state,
-            counter: state.counter + action.value
+            counter: state.counter + action.value,
+            name : state.newName
         };
     })
 );
